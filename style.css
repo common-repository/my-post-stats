@@ -1,0 +1,104 @@
+#myPostStatsWidget #toggleAuthors {
+	margin: 20px 0;
+}
+
+#myPostStatsWidget #buttonHolder {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#myPostStatsWidget #postsChart {
+	max-height: 275px;
+	overflow: auto;
+	margin-top: 20px;
+}
+
+#myPostStatsWidget #postsChart .post-bar {
+	height: 18px;
+	margin: 2px 0;
+	position: relative;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+/* only transition the first 12 items */
+#myPostStatsWidget #postsChart .post-bar:nth-child(-n+14) {
+	transition: width 1s ease;
+}
+
+#myPostStatsWidget #postsChart .post-bar .month-label {
+	position: absolute;
+	left: 5px;
+	color: #000;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+#myPostStatsWidget #hourlyDistribution {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin-top: 20px;
+}
+
+#myPostStatsWidget #hourlyDistribution .hour-bar {
+	margin: 2px;
+	text-align: center;
+	flex-grow: 1;
+}
+
+#myPostStatsWidget #hourlyDistribution .hour-bar.empty {
+	background: none;
+	height: 10px;
+}
+
+#myPostStatsWidget #postsByMonth summary {
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+}
+
+#myPostStatsWidget #myPostStatsSummary table {
+	border-collapse: collapse;
+	margin-bottom: .5em;
+}
+#myPostStatsWidget #myPostStatsSummary thead tr {
+	background: none !important;
+}
+
+#myPostStatsWidget #myPostStatsSummary tr:nth-child(2n+1) {
+	background-color: #f6f7f7;
+}
+
+#myPostStatsWidget #myPostStatsSummary tr td {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+#myPostStatsWidget #myPostStatsSummary tr td:first-child {
+	padding-left: .5em;
+}
+
+#myPostStatsWidget > details > summary {
+	text-decoration: none;
+	color: #000;
+}
+
+#myPostStatsWidget details details {
+	margin-left: 20px;
+}
+
+#myPostStatsWidget details ul {
+	margin: 0;
+}
+
+#myPostStatsWidget details ul li {
+	margin: 0;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+#myPostStatsWidget th {
+	text-align: left;
+	width: 30%;
+}
